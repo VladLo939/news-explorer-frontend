@@ -1,0 +1,5 @@
+.search-result__cards{
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F6F7;
+}

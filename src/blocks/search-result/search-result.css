@@ -1,0 +1,15 @@
+@import url('./__cards-list/search-result__cards-list.css');
+@import url('./__cards-title/search-result__cards-title.css');
+@import url('./__cards/search-result__cards.css');
+@import url('./__loading/search-result__loading.css');
+@import url('./__more-button/search-result__more-button.css');
+@import url('./__loading-text/search-result__loading-text.css');
+@import url('./__no-results/search-result__no-results.css');
+@import url('./__no-result-image/search-result__no-result-image.css');
+@import url('./__no-results-title/search-result__no-results-title.css');
+@import url('./__no-results-subtitle/search-result__no-results-subtitle.css');
+
+.search-results{
+  display: flex;
+  flex-direction: column;
+}

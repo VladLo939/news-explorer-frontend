@@ -1,0 +1,10 @@
+.place-card__title{
+  margin: 12px 0 16px 0;
+  font-family: 'Roboto Slab';
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}

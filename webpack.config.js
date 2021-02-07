@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
 module.exports = {
   entry: { main: './src/script.js' },
   output: {
@@ -52,6 +53,11 @@ module.exports = {
       inject: false,
       template: './src/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/articles.html',
+      filename: 'articles.html'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

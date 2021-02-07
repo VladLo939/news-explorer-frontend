@@ -1,0 +1,6 @@
+.place-card__image{
+  height: 272px;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+}

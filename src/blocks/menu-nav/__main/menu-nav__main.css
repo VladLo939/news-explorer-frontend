@@ -1,0 +1,8 @@
+.menu-nav__main{
+  margin: 0 32px 0 0;
+  display: flex;
+}
+
+.menu-nav__main:last-child{
+  margin: 0;
+}

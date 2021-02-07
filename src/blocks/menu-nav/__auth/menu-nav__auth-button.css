@@ -1,0 +1,18 @@
+.menu-nav__auth-button{
+  font: inherit;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 12px;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

@@ -1,3 +1,15 @@
-h1 {
-  color: red;
-}
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+@import url('../blocks/root/root.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/menu-nav/menu-nav.css');
+@import url('../blocks/logo/logo.css');
+@import url('../blocks/search-field/search-field.css');
+@import url('../blocks/search-result/search-result.css');
+@import url('../blocks/place-card/place-card.css');
+@import url('../blocks/preloader/preloader.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/about-author/about-author.css');
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/article-info/article-info.css');
+@import url('../blocks/icon/icon.css');

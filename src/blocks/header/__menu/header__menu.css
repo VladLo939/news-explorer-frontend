@@ -1,0 +1,12 @@
+.header__menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 116px 24px 104px;
+  border-bottom: solid 1px #c4c4c4;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}

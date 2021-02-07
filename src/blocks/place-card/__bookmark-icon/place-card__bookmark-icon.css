@@ -1,0 +1,7 @@
+.place-card__bookmark-icon{
+  background-image: url('../../../images/bookmark_normal.svg');
+}
+
+.place-card__bookmark-icon:hover{
+  background-image: url('../../../images/bookmar__hover.svg');
+}

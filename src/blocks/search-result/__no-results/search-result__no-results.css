@@ -1,0 +1,9 @@
+@import url('./_disabled/search-result__no-results_disabled.css');
+
+.search-result__no-results{
+  background-color: #F5F6F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

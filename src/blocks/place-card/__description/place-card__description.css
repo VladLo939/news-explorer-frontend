@@ -1,0 +1,10 @@
+.place-card__description{
+  padding: 20px 24px 24px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}

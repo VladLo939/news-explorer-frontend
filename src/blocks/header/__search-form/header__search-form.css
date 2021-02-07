@@ -1,0 +1,7 @@
+.header__search-form{
+  display: flex;
+  justify-content: center;
+  max-height: 64px;
+  padding-bottom: 80px;
+  margin-top: 64px;
+}

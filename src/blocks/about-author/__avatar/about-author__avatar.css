@@ -1,0 +1,6 @@
+.about-author__avatar{
+  border-radius: 50%;
+  width: 464px;
+  height: 464px;
+  object-fit: cover;
+}
