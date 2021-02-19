@@ -1,3 +1,5 @@
+@import url('./__section/root__section.css');
+
 .root{
   max-width: 1440px;
   margin: auto;

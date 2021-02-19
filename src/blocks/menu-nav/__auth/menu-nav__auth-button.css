@@ -1,3 +1,5 @@
+@import url('./_mobile/menu-nav__auth-button_mobile.css');
+
 .menu-nav__auth-button{
   font: inherit;
   background-color: transparent;
@@ -15,4 +17,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+
+@media screen and (max-width: 1024px){
+  .menu-nav__auth-button{
+    font-size: 16px;
+  }
 }

@@ -2,5 +2,6 @@
 @import url('../search-field/__input/search-field__input.css');
 
 .search-field{
+  margin: 0 auto;
   position: relative;
 }

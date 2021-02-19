@@ -1,3 +1,9 @@
 .header__nav.header__nav_logged-in{
   display: flex;
 }
+
+@media screen and (max-width: 670px){
+  .header__nav.header__nav_logged-in{
+   display: none;
+ }
+}

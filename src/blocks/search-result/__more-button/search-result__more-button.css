@@ -12,3 +12,11 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px;
 }
+
+.search-result__more-button:hover{
+  background-color: #E6E8EB;
+}
+
+@media screen and (max-width: 1024px){
+
+}

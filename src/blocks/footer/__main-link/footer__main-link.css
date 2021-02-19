@@ -12,3 +12,9 @@
 .footer__main-link:last-child{
   margin: 0;
 }
+
+@media screen and (max-width: 732px){
+  .footer__main-link{
+    margin-bottom: 38px;
+  }
+}

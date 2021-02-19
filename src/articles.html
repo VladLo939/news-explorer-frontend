@@ -12,12 +12,35 @@
       <header class="header header__theme header__theme_white">
         <div class="header__menu">
           <img src="<%=require('./images/NewsExplorer.svg')%>" alt="NewsExplorer logo" class="logo">
+          <button class="header__mobile-button header__mobile-button_black"></button>
+          <nav class="header__mobile-menu header__mobile-menu_indent header__mobile-menu_indent_hide">
+            <div class="header__container">
+            <img src="<%=require('./images/NewsExplorerWhite.svg')%>" alt="NewsExplorer logo" class="logo logo_mobile">
+            <img src="<%=require('./images/close.svg')%>" alt="NewsExplorer logo" class="close close_mobile">
+            </div>
+            <ul class="header__mobile-list">
+              <li class="header__list-item">
+                <a class="menu-nav__main-item">Главная</a>
+              </li>
+              <li class="header__list-item header__list-item_hide">
+                <a class="menu-nav__saved-articles-link" href="./src/articles.html">Сохранённые статьи</a>
+              </li>
+            </ul>
+          <ul class="header__login-list">
+              <li class="header__login-item">
+                <button class="button menu-nav__auth-button menu-nav__auth-button_mobile">Авторизоваться</button>
+              </li>
+              <li class="header__login-item header__login-item_hide">
+                <button class="menu-nav__logout-button menu-nav__logout-button_mobile" type="submit">Грета<img src="<%=require('./images/logoutWhite.svg')%>" alt="logout" class="logout__button"></button>
+              </li>
+          </ul>
+          </nav>
           <nav class="menu-nav header__nav header__nav_logged-in">
             <ul class="menu-nav__list">
               <li class="menu-nav__main">
                 <a class="menu-nav__main-item">Главная</a>
               </li>
-              <li class="menu-nav__main">
+              <li class="menu-nav__main menu-nav__main_underline-black">
                 <a class="menu-nav__saved-articles-link menu-nav__saved-articles-link_black" href="./src/articles.html">Сохранённые статьи</a>
               </li>
               <li class="menu-nav__main">
@@ -34,11 +57,13 @@
         </div>
         <section class="search-result">
           <div class="search-result__cards">
-            <a class="search-result__cards-list">
+            <div class="search-result__cards-list" href="#">
+            <a class="link" href="#">
             <div class="place-card">
-              <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+              <div class="place-card__image-container">
+                <img class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
                 <p class="place-card__heading"></p>
-                <button class="icon place-card__delete-icon"></button>
+                <button class="icon place-card__bookmark-icon"></button>
               </div>
               <div class="place-card__description">
                 <p class="place-card__date">2 августа, 2019</p>
@@ -48,6 +73,7 @@
               </div>
             </div>
           </a>
+            </div>
           </div>
           </section>
           <footer class="footer">
@@ -62,13 +88,12 @@
               <nav class="footer__social">
                 <ul class="footer__social-links">
                   <li class="footer__social-link"><a href=""><img src="<%=require('./images/facebook.svg')%>" alt="facebook"></a></li>
-                  <li class="footer__social-link"><a href=""><img src="<%=require('./images/git.svg')%>" atl="git"></a></li>
+                  <li class="footer__social-link"><a href=""><img src="<%=require('./images/git.svg')%>" alt="git"></a></li>
                 </ul>
               </nav>
             </div>
             </footer>
         </div>
-    </div>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
   </body>
 </html>

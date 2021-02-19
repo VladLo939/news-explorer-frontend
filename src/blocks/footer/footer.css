@@ -13,3 +13,16 @@
   justify-content: space-between;
   padding: 32px 104px 26px 104px;
 }
+
+@media screen and (max-width: 950px){
+  .footer{
+    padding: 25px 25px 26px 40px;
+  }
+}
+
+@media screen and (max-width: 732px){
+  .footer{
+    flex-direction: column;
+    padding: 25px 16px 26px 16px;
+  }
+}

@@ -12,20 +12,39 @@
       <header class="header">
         <div class="header__menu">
           <img src="<%=require('./images/NewsExplorerWhite.svg')%>" alt="NewsExplorer logo" class="logo">
+          <button class="header__mobile-button"></button>
+          <nav class="header__mobile-menu header__mobile-menu_indent header__mobile-menu_indent_hide">
+            <div class="header__container">
+            <img src="<%=require('./images/NewsExplorerWhite.svg')%>" alt="NewsExplorer logo" class="logo logo_mobile">
+            <img src="<%=require('./images/close.svg')%>" alt="NewsExplorer logo" class="close close_mobile">
+            </div>
+            <ul class="header__mobile-list">
+              <li class="header__list-item"><a class="menu-nav__main-item" href="./index.html">Главная</a></li>
+              <li class="header__list-item header__list-item_hide"><a class="menu-nav__saved-articles-link" href="./src/articles.html">Сохранённые статьи</a></li>
+            </ul>
+          <ul class="header__login-list">
+              <li class="header__login-item">
+                <button class="button menu-nav__auth-button menu-nav__auth-button_mobile">Авторизоваться</button>
+              </li>
+              <li class="header__login-item header__login-item_hide">
+                <button class="menu-nav__logout-button menu-nav__logout-button_mobile" type="submit">Грета<img src="<%=require('./images/logoutWhite.svg')%>" alt="logout" class="logout__button"></button>
+              </li>
+          </ul>
+          </nav>
           <nav class="menu-nav header__nav header__nav_main">
             <ul class="menu-nav__list">
-              <li class="menu-nav__main">
-                <a>Главная</a>
+              <li class="menu-nav__main menu-nav__main_underline">
+                <a class="link menu-nav__main-item" href="index.html">Главная</a>
               </li>
               <li class="menu-nav__main">
                 <button class="button menu-nav__auth-button">Авторизоваться</button>
               </li>
             </ul>
           </nav>
-          <nav class="menu-nav header__nav header__nav_logged-in">
+          <nav class="menu-nav header__nav header__nav_logged-in header__nav_logged-in_invisible">
             <ul class="menu-nav__list">
               <li class="menu-nav__main">
-                <a class="menu-nav__main-item">Главная</a>
+                <a class="menu-nav__main-item" href="./index.html">Главная</a>
               </li>
               <li class="menu-nav__main">
                 <a class="menu-nav__saved-articles-link" href="./src/articles.html">Сохранённые статьи</a>
@@ -51,8 +70,35 @@
         <div class="search-result__cards">
           <h2 class="search-result__cards-title">Результаты поиска</h2>
           <div class="search-result__cards-list">
+          <a class="link" href="#">
           <div class="place-card">
-            <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+            <div class="place-card__image-container">
+              <img class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+              <button class="icon place-card__bookmark-icon"></button>
+            </div>
+            <div class="place-card__description">
+              <p class="place-card__date">2 августа, 2019</p>
+              <h3 class="place-card__title">Национальное достояние – парки</h3>
+              <p class="place-card__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <p class="place-card__source">Лента.ру</p>
+            </div>
+          </div>
+        </a>
+          <div class="place-card">
+            <div class="place-card__image-container">
+              <img class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+              <button class="icon place-card__bookmark-icon"></button>
+            </div>
+            <div class="place-card__description">
+              <p class="place-card__date">2 августа, 2019</p>
+              <h3 class="place-card__title">Национальное достояние – парки</h3>
+              <p class="place-card__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <p class="place-card__source">Лента.ру</p>
+            </div>
+          </div>
+          <div class="place-card">
+            <div class="place-card__image-container">
+              <img class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
               <button class="icon place-card__bookmark-icon"></button>
             </div>
             <div class="place-card__description">
@@ -74,6 +120,7 @@
           <p class="search-result__no-results-title">Ничего не найдено</p>
           <p class="search-result__no-results-subtitle">К сожалению по вашему запросу ничего не найдено.</p>
         </div>
+      </section>
       <section class="about-author">
         <img src="<%=require('./images/gabenewell.jpg')%>" class="about-author__avatar">
         <div class="about_author__content">
@@ -83,7 +130,7 @@
       </section>
       <div class="popup">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close">
+          <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
           <h3 class="popup__title">Вход</h3>
           <form class="popup__form" name="new" novalidate>
               <p class="popup__input-name">Email</p>
@@ -93,26 +140,26 @@
               <input type="password" name="password" id="password" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
               <span id="password-error" class="error"></span>
               <button type="submit" class="button popup__button">Войти</button>
-              <a href="" class="popup__auth-box">или<span class="popup__auth-span">&ensp;Зарегистрироваться</span></a>
+              <button class="popup__auth-box">или<span class="popup__auth-span">&ensp;Зарегистрироваться</span></button>
           </form>
         </div>
       </div>
       <div class="popup">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="" class="popup__close">
+          <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
           <h3 class="popup__title">Регистрация</h3>
           <form class="popup__form" name="new" novalidate>
               <p class="popup__input-name">Email</p>
-              <input type="text" name="email" id="email-card" class="popup__input popup__input_type_email" placeholder="Введите почту" minlength="2" maxlength="30" required>
-              <span id="email-error"  class="error"></span>
+              <input type="text" name="email" id="reg-email-card" class="popup__input popup__input_type_email" placeholder="Введите почту" minlength="2" maxlength="30" required>
+              <span id="reg-email-error"  class="error"></span>
               <p class="popup__input-name">Пароль</p>
-              <input type="password" name="password" id="password" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
-              <span id="password-error" class="error"></span>
+              <input type="password" name="password" id="reg-password" class="popup__input popup__input_type_password" placeholder="Введите пароль" required>
+              <span id="reg-password-error" class="error"></span>
               <p class="popup__input-name">Имя</p>
               <input type="text" name="yourname" id="user-name" class="popup__input edit-popup__input_type_yourname" placeholder="Имя"  minlength="2" maxlength="30" required>
             <span id="user-name-error" class="error__error-name"></span>
               <button type="submit" class="button popup__button">Зарегистрироваться</button>
-              <a href="" class="popup__auth-box">или<span class="popup__auth-span">&ensp;Войти</span></a>
+              <button class="popup__auth-box">или<span class="popup__auth-span">&ensp;Войти</span></button>
           </form>
         </div>
       </div>
@@ -121,14 +168,14 @@
         <div class="footer__links">
           <nav class="footer__main-links">
             <ul class="footer__main-list">
-              <li class="footer__main-link"><a href="" class="footer__main-link">Главная</a></li>
-              <li class="footer__main-link"><a href="" class="footer__main-link">Яндекс.Практикум</a></li>
+              <li class="footer__main-link"><a href="./index.html" class="footer__main-link">Главная</a></li>
+              <li class="footer__main-link"><a href="https://praktikum.yandex.ru/" class="footer__main-link">Яндекс.Практикум</a></li>
             </ul>
           </nav>
           <nav class="footer__social">
             <ul class="footer__social-links">
-              <li class="footer__social-link"><a href=""><img src="<%=require('./images/facebook.svg')%>" alt="facebook"></a></li>
-              <li class="footer__social-link"><a href=""><img src="<%=require('./images/git.svg')%>" atl="git"></a></li>
+              <li class="footer__social-link"><a href="#"><img src="<%=require('./images/facebook.svg')%>" alt="facebook"></a></li>
+              <li class="footer__social-link"><a href="#"><img src="<%=require('./images/git.svg')%>" alt="git"></a></li>
             </ul>
           </nav>
         </div>

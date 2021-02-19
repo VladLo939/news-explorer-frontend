@@ -1,0 +1,4 @@
+.root__section{
+  width: calc(100% - 200px);
+  margin: auto;
+}

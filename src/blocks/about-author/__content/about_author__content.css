@@ -4,3 +4,10 @@
   max-width: 600px;
   margin-left: 56px;
 }
+
+@media screen and (max-width: 600px){
+  .about_author__content{
+    margin: 0;
+    margin-top: 24px;
+  }
+}

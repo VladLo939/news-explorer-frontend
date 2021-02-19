@@ -1,0 +1,5 @@
+@import url('./_mobile/close_mobile.css');
+
+.close{
+  position: absolute;
+}

@@ -1,6 +1,18 @@
 .header__about{
   display: flex;
   flex-direction: column;
-  width: 42.2%;
+  width: 608px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px){
+  .header__about{
+    width: 385px;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .header__about{
+    width: 285px;
+  }
 }

@@ -12,3 +12,37 @@
   font-weight: 400;
   line-height: 22px;
 }
+
+@media screen and (max-width: 1024px){
+  .search-field__input{
+    width: 436px;
+    font-size: 16px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #d1d2d6;
+    background: #fff;
+    border-radius: 100px;
+    height: 52px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .search-field__input{
+    width: 276px;
+    font-size: 16px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #d1d2d6;
+    background: #fff;
+    border-radius: 100px;
+    height: 44px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}

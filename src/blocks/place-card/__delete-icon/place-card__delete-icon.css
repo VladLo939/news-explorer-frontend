@@ -1,3 +1,7 @@
 .place-card__delete-icon{
   background-image: url('../../../images/delete.svg');
 }
+
+.place-card__delete-icon:hover{
+  background-image: url('../../../images/deletehover.svg');
+}

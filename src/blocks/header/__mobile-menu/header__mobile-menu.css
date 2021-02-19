@@ -1,0 +1,18 @@
+@import url('./_indent/header__mobile-menu_indent.css');
+@import url('./_hide/header__mobile-menu_indent_hide.css');
+
+.header__mobile-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 280px;
+  background: #1A1B22;
+}
+
+@media screen and (max-width: 670px){
+  .header__mobile-menu{
+    width: 100%;
+  }
+}

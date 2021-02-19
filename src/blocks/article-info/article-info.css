@@ -9,3 +9,17 @@
   margin-left: 104px;
   padding-top: 40px;
 }
+
+@media screen and (max-width: 768px){
+  .article-info{
+    margin-left: 40px;
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .article-info{
+    margin-left: 16px;
+    padding-top: 8px;
+  }
+}

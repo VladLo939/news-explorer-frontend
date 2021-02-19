@@ -12,3 +12,25 @@
   font-weight: 500;
   line-height: 24px;
 }
+
+.search-field__button:hover{
+  background-color: #347EFF;
+}
+
+.search-field__button:active{
+  background-color: #2A65CC;
+}
+
+@media screen and (max-width: 1024px){
+  .search-field__button{
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .search-field__button{
+    margin-top: 75px;
+    height: 56px;
+    width: 288px;
+  }
+}
