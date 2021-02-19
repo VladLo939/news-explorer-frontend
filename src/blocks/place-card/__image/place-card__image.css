@@ -4,7 +4,6 @@
   background-size: cover;
   position: relative;
   border-radius: 10px;
-  background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg);
 }
 
 @media screen and (max-width: 1024px){
