@@ -1,0 +1,21 @@
+.header__search-form{
+  display: flex;
+  justify-content: center;
+  max-height: 64px;
+  padding-bottom: 80px;
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1024px){
+  .header__search-form{
+    margin-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .header__search-form{
+    margin-top: 122px;
+    padding-bottom: 104px;
+  }
+}

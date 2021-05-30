@@ -1,0 +1,9 @@
+.logout__button{
+
+}
+
+@media screen and (max-width: 640px){
+  .logout__button{
+    position: fixed;
+  }
+}

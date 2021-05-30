@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NewsExplorer</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  </head>
+  <body>
+    <div class="root">
+      <header class="header header__theme header__theme_white">
+        <div class="header__menu">
+          <img src="<%=require('./images/NewsExplorer.svg')%>" alt="NewsExplorer logo" class="logo">
+          <button class="header__mobile-button header__mobile-button_black"></button>
+          <nav class="header__mobile-menu header__mobile-menu_indent header__mobile-menu_indent_hide">
+            <div class="header__container">
+            <img src="<%=require('./images/NewsExplorerWhite.svg')%>" alt="NewsExplorer logo" class="logo logo_mobile">
+            <img src="<%=require('./images/close.svg')%>" alt="NewsExplorer logo" class="close close_mobile">
+            </div>
+            <ul class="header__mobile-list">
+              <li class="header__list-item">
+                <a class="menu-nav__main-item">Главная</a>
+              </li>
+              <li class="header__list-item header__list-item_hide">
+                <a class="menu-nav__saved-articles-link" href="./src/articles.html">Сохранённые статьи</a>
+              </li>
+            </ul>
+          <ul class="header__login-list">
+              <li class="header__login-item">
+                <button class="button menu-nav__auth-button menu-nav__auth-button_mobile">Авторизоваться</button>
+              </li>
+              <li class="header__login-item header__login-item_hide">
+                <button class="menu-nav__logout-button menu-nav__logout-button_mobile" type="submit">Грета<img src="<%=require('./images/logoutWhite.svg')%>" alt="logout" class="logout__button"></button>
+              </li>
+          </ul>
+          </nav>
+          <nav class="menu-nav header__nav header__nav_logged-in">
+            <ul class="menu-nav__list">
+              <li class="menu-nav__main">
+                <a class="menu-nav__main-item">Главная</a>
+              </li>
+              <li class="menu-nav__main menu-nav__main_underline-black">
+                <a class="menu-nav__saved-articles-link menu-nav__saved-articles-link_black" href="./src/articles.html">Сохранённые статьи</a>
+              </li>
+              <li class="menu-nav__main">
+                <button class="menu-nav__logout-button menu-nav__logout-button_white-border" type="submit">Грета<img src="<%=require('./images/logoutBlack.svg')%>" alt="logout" class="logout__button"></button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="article-info">
+          <h4 class="article-info__title">Сохранённые статьи</h4>
+          <h2 class="article-info__amount">Грета, у вас 5 сохранённых статей</h2>
+          <p class="article-info__keywords">По ключевым словам: Природа, Тайга и 2-м другим</p>
+        </div>
+        <section class="search-result">
+          <div class="search-result__cards">
+            <div class="search-result__cards-list">
+            <div class="place-card">
+              <div class="place-card__image-container">
+                <img class="place-card__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg" alt="картинка">
+                <p class="place-card__heading"></p>
+                <button class="icon place-card__bookmark-icon"></button>
+              </div>
+              <a class="link" href="#">
+              <div class="place-card__description">
+                <p class="place-card__date">2 августа, 2019</p>
+                <h3 class="place-card__title">Национальное достояние – парки</h3>
+                <p class="place-card__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                <p class="place-card__source">Лента.ру</p>
+              </div>
+            </a>
+            </div>
+            </div>
+          </div>
+          </section>
+          <footer class="footer">
+            <p class="footer__copyright">&copy; 2020 Supersite, Powered by News API</p>
+            <div class="footer__links">
+              <nav class="footer__main-links">
+                <ul class="footer__main-list">
+                  <li class="footer__main-link"><a href="" class="footer__main-link">Главная</a></li>
+                  <li class="footer__main-link"><a href="" class="footer__main-link">Яндекс.Практикум</a></li>
+                </ul>
+              </nav>
+              <nav class="footer__social">
+                <ul class="footer__social-links">
+                  <li class="footer__social-link"><a href=""><img src="<%=require('./images/facebook.svg')%>" alt="facebook"></a></li>
+                  <li class="footer__social-link"><a href=""><img src="<%=require('./images/git.svg')%>" alt="git"></a></li>
+                </ul>
+              </nav>
+            </div>
+            </footer>
+        </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </body>
+</html>

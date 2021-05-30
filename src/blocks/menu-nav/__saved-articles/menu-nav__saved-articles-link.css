@@ -1,0 +1,6 @@
+@import url('.//_black/menu-nav__saved-articles-link_black.css');
+
+.menu-nav__saved-articles-link{
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,16 @@
+@import url('./__bookmark-icon/place-card__bookmark-icon.css');
+@import url('./__date/place-card__date.css');
+@import url('./__description/place-card__description.css');
+@import url('./__image/place-card__image.css');
+@import url('./__subtitle/place-card__subtitle.css');
+@import url('./__source/place-card__source.css');
+@import url('./__title/place-card__title.css');
+@import url('./__delete-icon/place-card__delete-icon.css');
+@import url('./__heading/place-card__heading.css');
+@import url('./__image-container/place-card__image-container.css');
+
+.place-card{
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}

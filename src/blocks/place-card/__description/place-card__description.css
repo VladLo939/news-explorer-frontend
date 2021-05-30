@@ -1,0 +1,17 @@
+.place-card__description{
+  padding: 20px 24px 24px;
+  font-family: 'Roboto';
+  text-align: left;
+}
+
+@media screen and (max-width: 768px){
+  .place-card__description{
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .place-card__description{
+    padding: 16px;
+  }
+}

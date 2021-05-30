@@ -1,0 +1,24 @@
+.search-result__cards-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 16px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px){
+  .search-result__cards-list{
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .search-result__cards-list{
+    grid-template-columns: repeat(auto-fill, 224px);
+  }
+}
+
+@media screen and (max-width: 320px){
+  .search-result__cards-list{
+    grid-template-columns: repeat(auto-fill, 288px);
+  }
+}

@@ -1,0 +1,25 @@
+@import url('../header/__menu/header__menu.css');
+@import url('../header/__nav/header__nav.css');
+@import url('../header/__about/header__about.css');
+@import url('../header/__about-title/header__about-title.css');
+@import url('../header/__about-subtitle/header__about-subtitle.css');
+@import url('../header/__search-form/header__search-form.css');
+@import url('../header/__theme/__theme.css');
+@import url('../header/__mobile-button/header__mobile-button.css');
+@import url('../header/__mobile-menu/header__mobile-menu.css');
+@import url('../header/__list-item/header__list-item.css');
+@import url('../header/__mobile-list/header__mobile-list.css');
+@import url('../header/__login-list/header__loggin-list.css');
+@import url('../header/__login-item/header__login-item.css');
+
+.header{
+  background-image: url('../../images/georgia-de-lotz--UsJoNxLaNo-unsplash\ \(1\).svg');
+  background-repeat: no-repeat;
+  color: white;
+  max-height: 576px;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px){
+
+}

@@ -1,0 +1,10 @@
+.popup__auth-box{
+  font-family: Inter;
+  line-height: 17px;
+  font-size: 14px;
+  font-style: normal;
+  align-items: baseline;
+  justify-content: center;
+  display: flex;
+  color: #000;
+}

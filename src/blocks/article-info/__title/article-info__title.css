@@ -1,0 +1,21 @@
+.article-info__title{
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+}
+
+@media screen and (max-width: 768px){
+  .article-info__title{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .article-info__title{
+    font-size: 12px;
+  }
+}

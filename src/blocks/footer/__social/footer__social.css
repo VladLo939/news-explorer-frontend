@@ -1,0 +1,9 @@
+.footer__social{
+  align-self: center;
+}
+
+@media screen and (max-width: 732px){
+  .footer__social{
+    align-self: baseline;
+  }
+}

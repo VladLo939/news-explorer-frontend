@@ -1,0 +1,14 @@
+.footer__social-links{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 42px;
+}
+
+@media screen and (max-width: 732px){
+  .footer__social-links{
+
+  }
+}

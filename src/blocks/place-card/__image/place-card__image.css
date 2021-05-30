@@ -1,0 +1,26 @@
+.place-card__image{
+  width: 100%;
+  height: 272px;
+  object-fit: cover;
+  object-position: top;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+@media screen and (max-width: 1024px){
+  .place-card__image{
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .place-card__image{
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .place-card__image{
+    height: 196px;
+  }
+}

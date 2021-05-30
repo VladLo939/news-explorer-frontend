@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NewsExplorer</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+<body>
+    <div class="root">
+      <header class="header">
+        <div class="header__menu">
+          <img src="<%=require('./images/NewsExplorerWhite.svg')%>" alt="логотип" class="logo">
+          <button class="header__mobile-button"></button>
+          <div class="header__mobile-menu header__mobile-menu_indent">
+            <div class="header__container">
+            <img src="<%=require('./images/NewsExplorerWhite.svg')%>" alt="логотип" class="logo logo_mobile">
+            <img src="<%=require('./images/close.svg')%>" alt="логотип" class="close close_mobile">
+            </div>
+            <ul class="header__mobile-list">
+              <li class="header__list-item"><a class="menu-nav__main-item" href="./index.html">Главная</a></li>
+              <li class="header__list-item header__list-item_hide"><a class="menu-nav__saved-articles-link" href="./src/articles.html">Сохранённые статьи</a></li>
+            </ul>
+          <ul class="header__login-list">
+              <li class="header__login-item">
+                <button class="button menu-nav__auth-button menu-nav__auth-button_mobile">Авторизоваться</button>
+              </li>
+              <li class="header__login-item header__login-item_hide">
+                <button class="menu-nav__logout-button menu-nav__logout-button_mobile" type="submit">Грета<img src="<%=require('./images/logoutWhite.svg')%>" alt="иконка выхода" class="logout__button"></button>
+              </li>
+          </ul>
+        </div>
+          <nav class="menu-nav header__nav header__nav_main">
+            <ul class="menu-nav__list">
+              <li class="menu-nav__main menu-nav__main_underline">
+                <a class="link menu-nav__main-item" href="index.html">Главная</a>
+              </li>
+              <li class="menu-nav__main">
+                <button class="button menu-nav__auth-button" id="auth-button">Авторизоваться</button>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu-nav header__nav header__nav_logged-in header__nav_logged-in_invisible">
+            <ul class="menu-nav__list">
+              <li class="menu-nav__main">
+                <a class="menu-nav__main-item" href="./index.html">Главная</a>
+              </li>
+              <li class="menu-nav__main">
+                <a class="menu-nav__saved-articles-link" href="./src/articles.html">Сохранённые статьи</a>
+              </li>
+              <li class="menu-nav__main">
+                <button class="menu-nav__logout-button" type="submit">Грета<img src="<%=require('./images/logoutWhite.svg')%>" alt="иконка выхода" class="logout__button"></button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__about">
+          <h1 class="header__about-title">Что творится в мире?</h1>
+          <h3 class="header__about-subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</h3>
+        </div>
+        <div class="header__search-form">
+          <form class="search-field" name="searchForm">
+            <input class="search-field__input" name="search" type="text" placeholder="Введите тему новости" minlength="2" maxlength="30" required>
+            <button class ="search-field__button" type="submit">Искать</button>
+          </form>
+        </div>
+      </header>
+      <section class="search-result">
+        <div class="search-result__cards">
+          <h2 class="search-result__cards-title">Результаты поиска</h2>
+          <div class="search-result__cards-list">
+         <!-- <div class="place-card">
+            <div class="place-card__image-container">
+              <img class="place-card__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg" alt="картинка">
+              <button class="icon place-card__bookmark-icon"></button>
+            </div>
+            <a class="link place-card__link" href="#">
+            <div class="place-card__description">
+              <p class="place-card__date"></p>
+              <h3 class="place-card__title"></h3>
+              <p class="place-card__subtitle"></p>
+              <p class="place-card__source"></p>
+            </div>
+          </a>
+          </div>
+          <div class="place-card">
+            <div class="place-card__image-container">
+              <img class="place-card__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg" alt="картинка">
+              <button class="icon place-card__bookmark-icon"></button>
+            </div>
+            <a class="link place-card__link" href="#">
+            <div class="place-card__description">
+              <p class="place-card__date">2 августа, 2019</p>
+              <h3 class="place-card__title">Национальное достояние – парки</h3>
+              <p class="place-card__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <p class="place-card__source">Лента.ру</p>
+            </div>
+          </a>
+          </div>
+          <div class="place-card">
+            <div class="place-card__image-container">
+              <img class="place-card__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg" alt="картинка">
+              <button class="icon place-card__bookmark-icon"></button>
+            </div>
+            <a class="link" href="#">
+            <div class="place-card__description">
+              <p class="place-card__date">2 августа, 2019</p>
+              <h3 class="place-card__title">Национальное достояние – парки</h3>
+              <p class="place-card__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <p class="place-card__source">Лента.ру</p>
+            </div>
+          </a>
+          </div>*!-->
+        </div>
+        <button class="search-result__more-button">Показать ещё</button>
+        </div>
+        <div class="search-result__loading search-result__loading_disabled">
+          <i class="preloader search-result__circle-preloader"></i>
+          <p class="search-result__loading-text">Идет поиск новостей...</p>
+        </div>
+        <div class="search-result__no-results search-result__no-results_disabled">
+          <img src="<%=require('./images/not-found.svg')%>" class="search-result__no-result-image" alt="not found">
+          <p class="search-result__no-results-title">Ничего не найдено</p>
+          <p class="search-result__no-results-subtitle">К сожалению по вашему запросу ничего не найдено.</p>
+        </div>
+      </section>
+      <section class="about-author">
+        <img src="<%=require('./images/gabenewell.jpg')%>" alt="аватар" class="about-author__avatar">
+        <div class="about_author__content">
+        <h2 class="about-author__title">Об авторе</h2>
+        <h4 class="about-author__subtitle">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</h4>
+      </div>
+      </section>
+      <div class="popup">
+        <div class="popup__content">
+          <img src="<%=require('./images/close.svg')%>" alt="иконка крестика" class="popup__close">
+          <h3 class="popup__title">Вход</h3>
+          <form class="popup__form" name="enter" disabled="disabled" novalidate>
+              <p class="popup__input-name">Email</p>
+              <input type="text" name="email" id="email-card" class="popup__input popup__input_type_email" placeholder="Введите почту" minlength="2" maxlength="30" required>
+              <span id="email-error"  class="error"></span>
+              <p class="popup__input-name">Пароль</p>
+              <input type="password" name="password" id="password" class="popup__input popup__input_type_password" pattern="[A-Za-z0-9]{8,}" placeholder="Введите пароль" minlength="2" maxlength="30" required>
+              <span id="password-error" class="error"></span>
+              <button type="submit" class="button popup__button">Войти</button>
+              <span class="popup__auth-box">или<button type="button" class="popup__auth-button" id="reg-button">&ensp;Зарегистрироваться</button></span>
+          </form>
+        </div>
+      </div>
+      <div class="popup" id="reg-popup">
+        <div class="popup__content">
+          <img src="<%=require('./images/close.svg')%>" alt="иконка крестика" class="popup__close">
+          <h3 class="popup__title">Регистрация</h3>
+          <form class="popup__form" name="registration" novalidate>
+              <p class="popup__input-name">Email</p>
+              <input type="text" name="email" id="reg-email" class="popup__input popup__input_type_email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" placeholder="Введите почту" minlength="2" maxlength="30" required>
+              <span id="reg-email-error"  class="error"></span>
+              <p class="popup__input-name">Пароль</p>
+              <input type="password" name="password" id="reg-password" class="popup__input popup__input_type_password" pattern="[A-Za-z0-9]{8,}" placeholder="Введите пароль" required>
+              <span id="reg-password-error" class="error"></span>
+              <p class="popup__input-name">Имя</p>
+              <input type="text" name="yourname" id="user-name" class="popup__input edit-popup__input_type_yourname" placeholder="Имя"  minlength="2" maxlength="30" required>
+            <span id="user-name-error" class="error"></span>
+              <button type="submit" class="button popup__button popup__button_enabled">Зарегистрироваться</button>
+              <span class="popup__auth-box">или<button type="button" class="popup__auth-button" id="enter-button">&ensp;Войти</button></span>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2020 Supersite, Powered by News API</p>
+        <div class="footer__links">
+          <nav class="footer__main-links">
+            <ul class="footer__main-list">
+              <li class="footer__main-link"><a href="./index.html" class="footer__main-link">Главная</a></li>
+              <li class="footer__main-link"><a href="https://praktikum.yandex.ru/" class="footer__main-link">Яндекс.Практикум</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__social">
+            <ul class="footer__social-links">
+              <li class="footer__social-link"><a href="#"><img src="<%=require('./images/facebook.svg')%>" alt="facebook"></a></li>
+              <li class="footer__social-link"><a href="#"><img src="<%=require('./images/git.svg')%>" alt="git"></a></li>
+            </ul>
+          </nav>
+        </div>
+        </footer>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@import url('../__main/_underline/menu-nav__main_underline.css');
+@import url('../__main/_underline-black/menu-nav__main_underline-black.css');
+
+.menu-nav__main{
+  margin: 0 32px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-nav__main:last-child{
+  margin: 0;
+}
+

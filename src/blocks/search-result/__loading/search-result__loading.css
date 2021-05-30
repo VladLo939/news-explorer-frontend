@@ -1,0 +1,9 @@
+@import url('./_disabled/search-result__loading_disabled.css');
+
+.search-result__loading{
+display: flex;
+background-color: #F5F6F7;
+padding-top: 80px;
+flex-direction: column;
+align-items: center;
+}

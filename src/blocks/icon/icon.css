@@ -1,0 +1,10 @@
+.icon{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 24px;
+  right: 24px;
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+}

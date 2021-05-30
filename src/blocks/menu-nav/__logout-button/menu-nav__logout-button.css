@@ -1,0 +1,13 @@
+@import url('./_white-border/menu-nav__logout-button_white-border.css');
+@import url('./_mobile/menu-nav__logout-button_mobile.css');
+
+.menu-nav__logout-button{
+  color: white;
+  font: inherit;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  display: inherit;
+  padding: 10px;
+}

@@ -1,0 +1,22 @@
+.search-result__more-button{
+width: 288px;
+height: 64px;
+border: none;
+background-color: white;
+border-radius: 100px;
+margin: auto;
+margin-bottom: 80px;
+font-family: 'Roboto';
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+}
+
+.search-result__more-button:hover{
+  background-color: #E6E8EB;
+}
+
+@media screen and (max-width: 1024px){
+
+}
